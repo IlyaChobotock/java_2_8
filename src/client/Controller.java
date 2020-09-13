@@ -51,7 +51,7 @@ public class Controller implements Initializable {
 
     private boolean authenticated;
     private String nickname;
-    private final String TITLE = "Флудилка";
+    private final String TITLE = "FirstChat";
 
     private Stage stage;
     private Stage regStage;
@@ -193,7 +193,7 @@ public class Controller implements Initializable {
 
     private void setTitle(String nick) {
         Platform.runLater(() -> {
-            ((Stage) textField.getScene().getWindow()).setTitle(TITLE + " " + nick);
+            ((Stage) textField.getScene().getWindow()).setTitle(TITLE + "  User: " + nick);
         });
     }
 
